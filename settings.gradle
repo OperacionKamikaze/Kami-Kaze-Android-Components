@@ -13,5 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Kami - Kaze Components"
-include ':app'
 include ':kz-components'
