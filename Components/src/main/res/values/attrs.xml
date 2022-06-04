@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022. Operación Kami - Kaze.
+  ~
+  ~ Licensed under the GNU General Public License v3.0
+  ~
+  ~ https://www.gnu.org/licenses/gpl-3.0.html
+  ~
+  ~ Permissions of this strong copyleft license are conditioned on making available complete
+  ~ source code of licensed works and modifications, which include larger works using a licensed
+  ~ work, under the same license. Copyright and license notices must be preserved. Contributors
+  ~ provide an express grant of patent rights.
+  -->
+
+<resources>
+    <declare-styleable name="kz_style">
+        <attr name="kzFont">
+            <enum name="regular" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+            <enum name="italic_bold" value="2"/>
+        </attr>
+        <attr name="kzBackgroundButton">
+            <enum name="normal" value="0"/>
+            <enum name="kz" value="1"/>
+            <enum name="transparent_border_gray" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="arcThickness" format="dimension"/>
+        <attr name="progress" format="integer"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="kzShareButton">
+        <attr name="buttonBackground" format="color" />
+        <attr name="textColor" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectionTile">
+        <attr name="customLayout" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TaggedTile">
+        <attr name="hiddenTag" format="boolean" />
+        <attr name="tagColor" format="color" />
+    </declare-styleable>
+</resources>
