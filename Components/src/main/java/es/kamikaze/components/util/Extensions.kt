@@ -19,7 +19,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.LayoutRes
 import androidx.appcompat.widget.LinearLayoutCompat
 
 /**
@@ -63,6 +65,29 @@ fun View.isInvisible() = visibility == View.INVISIBLE
  */
 fun TextView.setTextOrHideIfNull(textValue: String?) {
     textValue?.let { text = textValue } ?: gone()
+}
+
+fun ViewGroup.inflateLayout(@LayoutRes layoutRes: Int): View {
+    return LayoutInflater.from(this.context).inflate(layoutRes, this, false)
+}
+
+fun View.bindData(data: String?) {
+    if (data.isNullOrEmpty() || data.isBlank()) return gone() else visible()
+    when (this) {
+        is TextView -> this.text = data
+        is ImageView -> ImageLoadingUtil.setImage(this.context, data, 0, this)
+    }
+}
+
+fun View.setMargins(left: Int? = null, top: Int? = null, right: Int? = null, bottom: Int? = null) {
+    val lp = layoutParams as? ViewGroup.MarginLayoutParams ?: return
+    lp.setMargins(
+        left ?: lp.leftMargin,
+        top ?: lp.topMargin,
+        right ?: lp.rightMargin,
+        bottom ?: lp.bottomMargin
+    )
+    layoutParams = lp
 }
 
 /**
