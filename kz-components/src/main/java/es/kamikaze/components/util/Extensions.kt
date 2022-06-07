@@ -23,6 +23,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.LayoutRes
 import androidx.appcompat.widget.LinearLayoutCompat
+import androidx.constraintlayout.widget.ConstraintSet
 
 /**
  * Pone la vista en como GONE.
@@ -88,6 +89,13 @@ fun View.setMargins(left: Int? = null, top: Int? = null, right: Int? = null, bot
         bottom ?: lp.bottomMargin
     )
     layoutParams = lp
+}
+
+fun ConstraintSet.match(view: View, parentView: View) {
+    this.connect(view.id, ConstraintSet.TOP, parentView.id, ConstraintSet.TOP)
+    this.connect(view.id, ConstraintSet.START, parentView.id, ConstraintSet.START)
+    this.connect(view.id, ConstraintSet.END, parentView.id, ConstraintSet.END)
+    this.connect(view.id, ConstraintSet.BOTTOM, parentView.id, ConstraintSet.BOTTOM)
 }
 
 /**

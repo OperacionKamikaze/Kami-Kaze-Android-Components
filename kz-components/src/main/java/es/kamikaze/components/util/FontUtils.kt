@@ -5,10 +5,10 @@ import android.graphics.Typeface
 
 class FontUtils {
     object FontConstantHolder {
-        const val REGULAR_KZ_FONT = "font/kamikazeRegularFont.ttf"
-        const val BOLD_KZ_FONT = "font/kamikazeBoldFont.ttf"
-        const val ITALIC_KZ_FONT = "font/kamikazeItalicFont.ttf"
-        const val ITALIC_BOLD_KZ_FONT = "font/kamikazeBoldItalicFont.ttf"
+        const val REGULAR_KZ_FONT = "font/kamikaze_regular_font.ttf"
+        const val BOLD_KZ_FONT = "font/kamikaze_bold_font.ttf"
+        const val ITALIC_KZ_FONT = "font/kamikaze_italic_font.ttf"
+        const val ITALIC_BOLD_KZ_FONT = "font/kamikaze_bold_italic_font.ttf"
     }
 
     companion object {

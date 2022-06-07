@@ -60,7 +60,7 @@ open class KzTextView : AppCompatTextView {
      * Because of this implementation, this usage restricts the [KzTextView] to be single line only, so
      * the line is always displayed on the correct position.
      */
-    fun setStrikeThroughEnabled(enabled: Boolean, @ColorRes color: Int = R.color.colorPrimary) {
+    fun setStrikeThroughEnabled(enabled: Boolean, @ColorRes color: Int = R.color.black) {
         strikeThroughEnabled = enabled
         paint.color = ContextCompat.getColor(this.context, color)
         paint.strokeWidth = this.context.resources.displayMetrics.density

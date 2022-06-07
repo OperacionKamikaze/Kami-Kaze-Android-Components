@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'kotlin-android'
 }
 
 android {
@@ -36,6 +37,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     implementation 'com.google.android.material:material:1.6.1'
+    implementation "androidx.core:core-splashscreen:1.0.0-rc01"
 
     // External dependencies
     implementation 'com.github.bumptech.glide:glide:4.13.2'

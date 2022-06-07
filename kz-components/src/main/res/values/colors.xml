@@ -12,17 +12,33 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#00bcd4</color>
-    <color name="colorPrimaryDark">#0097a7</color>
-    <color name="colorAccent">#ffc107</color>
-    <color name="colorPrimaryText">#ffffff</color>
-    <color name="colorSecondaryText">#212121</color>
-    <color name="colorDivider">#bdbdbd</color>
-    <color name="colorBackground">#ffffff</color>
-    <color name="colorBackgroundDark">#fafafa</color>
-    <color name="colorBackgroundLight">#f5f5f5</color>
-    <color name="colorBackgroundDarker">#e0e0e0</color>
-    <color name="colorBackgroundLighter">#eeeeee</color>
-    <color name="colorBackgroundDarkest">#bdbdbd</color>
-    <color name="colorBackgroundLightest">#ffffff</color>
+    <color name="primaryColor">#005fe8</color>
+    <color name="primaryLightColor">#658cff</color>
+    <color name="primaryDarkColor">#0037b5</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryDarkColor">#3672FF</color>
+
+    <color name="windowBackground">@color/off_white</color>
+    <color name="iconColorTint">@color/dark_grey</color>
+    <color name="textDefaultColor">@color/dark_grey</color>
+    <color name="tabItemIndicatorColor">@color/primaryColor</color>
+    <color name="textColorHyperText">@color/dark_grey</color>
+    <color name="textColorSecondary">@color/dark_grey</color>
+    <color name="textColorTertiary">@color/warm_grey_two</color>
+    <color name="textColorError">@color/red</color>
+    <color name="textColorLite">@color/brownish_grey</color>
+    <color name="textColorSecondaryLite">@color/brownish_grey</color>
+    <color name="hyperTextWhiteColor">@color/white</color>
+    <color name="hyperTextGrayColor">@color/brownish_grey</color>
+    <color name="hyperTextSecondaryColor">@color/red</color>
+    <color name="errorColor">@color/red</color>
+    <color name="endIconTint">@color/black</color>
+
+    <color name="text_input_focus_color">@color/cerulean_two</color>
+
+    <color name="error_action_text_color">@color/red</color>
+    <color name="action_text_color">@color/red</color>
+
+    <color name="hyper_text_active_color">@color/red</color>
+    <color name="hyper_text_dimmed_gray_color">@color/warm_grey_two</color>
 </resources>

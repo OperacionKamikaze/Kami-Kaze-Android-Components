@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2022. Operación Kami - Kaze.
+  ~
+  ~ Licensed under the GNU General Public License v3.0
+  ~
+  ~ https://www.gnu.org/licenses/gpl-3.0.html
+  ~
+  ~ Permissions of this strong copyleft license are conditioned on making available complete
+  ~ source code of licensed works and modifications, which include larger works using a licensed
+  ~ work, under the same license. Copyright and license notices must be preserved. Contributors
+  ~ provide an express grant of patent rights.
+  -->
+
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.KamiKaze" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primaryLightColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+    <!-- Customize your theme here.-->
+    <style name="Theme.KamiKaze.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="KZBaseRegularTextStyle">
+        <item name="fontFamily">@font/kamikaze_regular_font</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="KZBaseRegularBoldTextStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="KZTextRegularBoldWhiteOnlyStyle" parent="KZTextRegularBoldStyle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="KZBaseLiteTextStyle">
+        <item name="fontFamily">@font/kamikaze_regular_font</item>
+    </style>
+
+    <style name="KZTextRegularNormalSize" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+    </style>
+
+    <style name="KZHyperTextStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+        <item name="android:textColor">@color/textColorHyperText</item>
+    </style>
+
+    <style name="KZHyperTextSmallStyle" parent="KZHyperTextStyle">
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="KZHyperTextGrayStyle" parent="KZHyperTextStyle">
+        <item name="android:textColor">@color/hyperTextGrayColor</item>
+    </style>
+
+    <style name="KZHyperTextSecondaryStyle" parent="KZHyperTextStyle">
+        <item name="android:textColor">@color/hyperTextSecondaryColor</item>
+    </style>
+
+    <style name="KZHyperActiveTextSecondaryStyle" parent="KZHyperTextStyle">
+        <item name="android:textColor">@color/hyper_text_active_color</item>
+    </style>
+
+    <style name="KZHyperTextWhiteStyle" parent="KZHyperTextStyle">
+        <item name="android:textColor">@color/hyperTextWhiteColor</item>
+    </style>
+
+    <style name="KZTextLargeRegularStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_18sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextXLargeLiteStyle" parent="KZBaseLiteTextStyle">
+        <item name="android:textSize">@dimen/ts_24sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextXLargeStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_24sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextRegularBoldStyle" parent="KZBaseRegularBoldTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextLargeBoldStyle" parent="KZBaseRegularBoldTextStyle">
+        <item name="android:textSize">@dimen/ts_18sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextRegularWithLetterSpacingBoldStyle" parent="KZBaseRegularBoldTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+    </style>
+
+    <style name="KZTextXLargeBoldStyle" parent="KZBaseRegularBoldTextStyle">
+        <item name="android:textSize">@dimen/ts_24sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextXXLargeRegularStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_28sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_8sp</item>
+    </style>
+
+    <style name="KZTextXXLargeBoldStyle" parent="KZBaseRegularBoldTextStyle">
+        <item name="android:textSize">@dimen/ts_28sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_8sp</item>
+    </style>
+
+    <style name="KZXXXLargeTextRegularStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_42sp</item>
+        <item name="android:lineSpacingExtra">-2sp</item>
+    </style>
+
+    <style name="KZXXXLargeTextLiteStyle" parent="KZBaseLiteTextStyle">
+        <item name="android:textSize">@dimen/ts_42sp</item>
+        <item name="android:lineSpacingExtra">-2sp</item>
+    </style>
+
+    <style name="KZTextLargeRegularLiteStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_18sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+        <item name="android:textColor">@color/textColorLite</item>
+    </style>
+
+    <style name="KZTextMediumRegularLiteStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+        <item name="android:textColor">@color/textColorLite</item>
+    </style>
+
+    <style name="KZTextMediumRegularStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZTextSmallRegularStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_4sp</item>
+    </style>
+
+    <style name="KZTextSmallErrorStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_4sp</item>
+        <item name="android:textColor">@color/textColorError</item>
+    </style>
+
+
+    <style name="KZTextSmallRegularDefaultStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_4sp</item>
+        <item name="android:textColor">@color/textDefaultColor</item>
+    </style>
+
+    <style name="KZTextSmallRegularLiteStyle" parent="KZTextSmallRegularDefaultStyle">
+        <item name="android:textColor">@color/textColorLite</item>
+    </style>
+
+    <style name="KZTextSmallRegularLiteStyleTertiary" parent="KZTextSmallRegularDefaultStyle">
+        <item name="android:textColor">@color/textColorTertiary</item>
+    </style>
+
+    <style name="KZTextSmallRegularBoldStyle" parent="KZBaseRegularBoldTextStyle">
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_4sp</item>
+    </style>
+
+    <style name="KZMaterialTextInputOutLinedLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_outline_color</item>
+        <item name="boxStrokeWidth">@dimen/dimen_1dp</item>
+        <item name="boxStrokeWidthFocused">@dimen/dimen_1dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textColorHint">@color/textColorSecondaryLite</item>
+        <item name="hintTextAppearance">@style/TextFloatingHintAppearance</item>
+        <item name="errorTextAppearance">@style/TextErrorAppearance</item>
+        <item name="helperTextTextAppearance">@style/TextHelperAppearance</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dimen_6dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dimen_6dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dimen_6dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dimen_6dp</item>
+        <item name="errorTextColor">@color/tabItemIndicatorColor</item>
+        <item name="hintTextColor">@color/text_input_hint_color</item>
+        <item name="helperTextTextColor">@color/textColorLite</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="boxStrokeErrorColor">@color/error_action_text_color</item>
+        <item name="colorControlActivated">@color/warm_grey_two</item>>
+    </style>
+
+    <style name="KZMaterialTextInputUserNameOutLinedLayout" parent="KZMaterialTextInputOutLinedLayout">
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/endIconTint</item>
+        <item name="endIconCheckable">true</item>
+        <item name="endIconDrawable">@drawable/ic_info_circle</item>
+    </style>
+
+    <style name="KZMaterialTextInputPasswordOutLinedLayout" parent="KZMaterialTextInputOutLinedLayout">
+        <item name="endIconMode">password_toggle</item>
+        <item name="endIconTint">@color/endIconTint</item>
+        <item name="endIconCheckable">true</item>
+        <item name="endIconDrawable">@drawable/bg_show_password_selector</item>
+    </style>
+
+    <style name="TextFloatingHintAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/text_input_hint_color</item>
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="fontFamily">@font/kamikaze_regular_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <item name="android:textColor">@color/error_action_text_color</item>
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="fontFamily">@font/kamikaze_regular_font</item>
+    </style>
+
+    <style name="TextHelperAppearance" parent="TextAppearance.Design.HelperText">
+        <item name="android:textColor">@color/brownish_grey</item>
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="fontFamily">@font/kamikaze_regular_font</item>
+    </style>
+
+    <style name="KZTextInput" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_marginBottom">@dimen/dimen_4dp</item>
+        <item name="android:textColor">@color/textDefaultColor</item>
+        <item name="android:drawablePadding">@dimen/dimen_8dp</item>
+<!--        <item name="android:textCursorDrawable">@drawable/cursor_dark_grey</item>-->
+        <item name="android:textSize">@dimen/ts_18sp</item>
+        <item name="android:paddingTop">@dimen/dimen_12dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_12dp</item>
+    </style>
+
+    <style name="KZTextInputPassword" parent="KZTextInput">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="KZFloatingLabel" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_14sp</item>
+        <item name="android:textColor">@color/brownish_grey</item>
+    </style>
+
+    <style name="KZTextInputLayoutErrorText" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableStart">@null</item>
+        <item name="android:drawablePadding">@dimen/dimen_6dp</item>
+        <item name="android:paddingTop">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="BaseButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@dimen/ts_18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dimen_8dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_8dp</item>
+        <item name="android:paddingStart">@dimen/dimen_16dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_16dp</item>
+        <item name="fontFamily">@font/kamikaze_regular_font</item>
+    </style>
+
+    <style name="IconDayNightStyle">
+        <item name="tint">@color/iconColorTint</item>
+    </style>
+
+    <style name="PrimaryItemTitleStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:textColor">@color/textDefaultColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PrimaryItemsSecondaryText" parent="KZBaseRegularTextStyle">
+        <item name="android:textColor">@color/textColorLite</item>
+        <item name="android:textSize">@dimen/ts_14sp</item>
+    </style>
+
+    <style name="KZActionTextStyle" parent="KZBaseRegularTextStyle">
+        <item name="android:textColor">@color/action_text_color</item>
+        <item name="android:textSize">@dimen/ts_16sp</item>
+        <item name="android:lineSpacingExtra">@dimen/ts_6sp</item>
+    </style>
+
+    <style name="KZActionTextStyleBold" parent="KZActionTextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+</resources>

@@ -26,7 +26,12 @@
         </attr>
     </declare-styleable>
 
-    <declare-styleable name="CircleProgressBar">
+    <declare-styleable name="KzStatsField">
+        <attr name="kztvFieldName" format="string"/>
+        <attr name="kztvFieldValue" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="KzCircleProgressBar">
         <attr name="arcThickness" format="dimension"/>
         <attr name="progress" format="integer"/>
         <attr name="progressColor" format="color"/>
@@ -37,14 +42,5 @@
         <attr name="buttonBackground" format="color" />
         <attr name="textColor" format="dimension" />
         <attr name="cornerRadius" format="dimension" />
-    </declare-styleable>
-
-    <declare-styleable name="SelectionTile">
-        <attr name="customLayout" format="boolean" />
-    </declare-styleable>
-
-    <declare-styleable name="TaggedTile">
-        <attr name="hiddenTag" format="boolean" />
-        <attr name="tagColor" format="color" />
     </declare-styleable>
 </resources>
