@@ -305,4 +305,9 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowBackground">@null</item>
     </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dimen_100dp</item>
+    </style>
 </resources>
